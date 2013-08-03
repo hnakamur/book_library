@@ -19,5 +19,11 @@ module Todo
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    config.cdnjs = [
+      {'cdnjs' => 'jquery/1.10.2/jquery.min.js', 'localpath' => 'jquery-1.10.2.min.js'},
+      {'cdnjs' => 'underscore.js/1.5.1/underscore-min.js', 'localpath' => 'underscore-1.5.1.min.js'},
+      {'cdnjs' => 'backbone.js/1.0.0/backbone-min.js', 'localpath' => 'backbone-1.0.0.min.js'},
+    ]
   end
 end

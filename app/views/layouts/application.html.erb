@@ -3,6 +3,7 @@
 <head>
   <title>Todo</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= cdnjs_include_tag Rails.application.config.cdnjs %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
