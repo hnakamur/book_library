@@ -2,9 +2,19 @@
 <html>
 <head>
   <title>Todo</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => false %>
   <%= cdnjs_include_tag Rails.application.config.cdnjs %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <script id="bookTemplate" type="text/template">
+    <img src="{{ coverImage }}"/>
+    <ul>
+      <li>{{ title }}</li>
+      <li>{{ author }}</li>
+      <li>{{ releaseDate }}</li>
+      <li>{{ keywords }}</li>
+    </ul>
+    <button class="delete">Delete</button>
+  </script>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => false %>
   <%= csrf_meta_tags %>
 </head>
 <body>

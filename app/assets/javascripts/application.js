@@ -10,6 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require models/book
+//= require collections/library
+//= require views/settings
+//= require views/book
+//= require views/library
+//= require app
